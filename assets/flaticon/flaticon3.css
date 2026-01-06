@@ -1,0 +1,65 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 23/08/2017 15:47 Motorland
+  	*/
+
+@font-face {
+  font-family: "flaticon3";
+  src: url("./flaticon3.eot");
+  src: url("./flaticon3.eot?#iefix") format("embedded-opentype"),
+       url("./flaticon3.woff") format("woff"),
+       url("./flaticon3.ttf") format("truetype"),
+       url("./flaticon3.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "flaticon3";
+    src: url("./flaticon3.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon3-"]:before, [class*=" flaticon3-"]:before,
+[class^="flaticon3-"]:after, [class*=" flaticon3-"]:after {
+  font-family: flaticon3;
+font-style: normal;
+}
+
+.flaticon3-doors:before { content: "\f100"; }
+.flaticon3-transport-1:before { content: "\f101"; }
+.flaticon3-suitcase-with-white-details:before { content: "\f102"; }
+.flaticon3-technology:before { content: "\f103"; }
+.flaticon3-transport:before { content: "\f104"; }
+.flaticon3-handshake:before { content: "\f105"; }
+.flaticon3-travel:before { content: "\f106"; }
+.flaticon3-sedan-car-model:before { content: "\f107"; }
+.flaticon3-car-black-side-view-pointing-left:before { content: "\f108"; }
+.flaticon3-car-of-hatchback-model:before { content: "\f109"; }
+.flaticon3-coupe-car:before { content: "\f10a"; }
+.flaticon3-car-1:before { content: "\f10b"; }
+.flaticon3-cabrio-car:before { content: "\f10c"; }
+.flaticon3-sportive-car:before { content: "\f10d"; }
+.flaticon3-pick-up:before { content: "\f10e"; }
+.flaticon3-ac:before { content: "\f10f"; }
+.flaticon3-oil:before { content: "\f110"; }
+.flaticon3-transmision:before { content: "\f111"; }
+.flaticon3-screwdriver-and-wrench:before { content: "\f112"; }
+.flaticon3-gears:before { content: "\f113"; }
+.flaticon3-voltage:before { content: "\f114"; }
+.flaticon3-wheel-and-manometer:before { content: "\f115"; }
+.flaticon3-car-driver:before { content: "\f116"; }
+.flaticon3-auto-repair-service:before { content: "\f117"; }
+.flaticon3-car-dashboard:before { content: "\f118"; }
+.flaticon3-calculator:before { content: "\f119"; }
+.flaticon3-smartphone:before { content: "\f11a"; }
+.flaticon3-car:before { content: "\f11b"; }
+.flaticon3-fuel:before { content: "\f11c"; }
+.flaticon3-wrench:before { content: "\f11d"; }
+.flaticon3-gearbox:before { content: "\f11e"; }
+.flaticon3-steering-wheel:before { content: "\f11f"; }
+.flaticon3-inspection:before { content: "\f120"; }
+.flaticon3-painting:before { content: "\f121"; }
+.flaticon3-gearstick:before { content: "\f122"; }
+.flaticon3-wheel-alignment:before { content: "\f123"; }
