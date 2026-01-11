@@ -99,7 +99,7 @@
                     </div>
             </div>
             <a href="testdrive.php" class="nav-item nav-link <?php if ($page === 'testdrive') echo 'active'; ?>">Essai</a>
-            <a href="index.php#services" class="nav-item nav-link <?php if ($page === 'service') echo 'active'; ?>" id="services-link">Services</a>
+            <a href="services.php" class="nav-item nav-link <?php if ($page === 'services') echo 'active'; ?>">Services</a>
             <a href="contact.php" class="nav-item nav-link <?php if ($page === 'contact') echo 'active'; ?>">Contact</a>
 
 <div class="nav-item dropdown user-dropdown">

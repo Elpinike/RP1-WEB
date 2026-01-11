@@ -1,0 +1,9 @@
+*.log
+*.tmp
+*.zip
+
+folder_structure.txt
+folderscript.py
+
+admin/
+documentation/

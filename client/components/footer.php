@@ -54,8 +54,7 @@ $icon = htmlspecialchars($row['icon'] ?? '', ENT_QUOTES, 'UTF-8');
   <div class="footer-logo"></div>
   <h2 class="footer-logo-text m-0">SUPERCAR</h2>
 </div>
-                <p>Pas besoin de réinventer la roue pour rouler mieux
-</p>
+                <p>Pourquoi réinventer la roue? On l'a perfectionnée!</p>
                 <div class="d-flex pt-2">
                     <?php
                     $count = 0;
@@ -81,7 +80,7 @@ $icon = htmlspecialchars($row['icon'] ?? '', ENT_QUOTES, 'UTF-8');
                 <h5 class="footer-section__title">Liens rapides</h5>
                 <a class="footer-link" href="cars.php">Nos Voitures</a>
                 <a class="footer-link" href="testdrive.php">Demande d'essai</a>
-                <a class="footer-link" href="index.php#services">Nos Services</a>
+                <a class="footer-link" href="services.php">Nos Services</a>
                 <!-- <a class="btn btn-link" href="site_info.php">site_infoez-nous</a> -->
                 <a class="footer-link" href="#" data-bs-toggle="modal" data-bs-target="#modalMentions">Mentions Légales</a>
             </div>
@@ -205,7 +204,7 @@ $icon = htmlspecialchars($row['icon'] ?? '', ENT_QUOTES, 'UTF-8');
 <!-- JavaScript Libraries -->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
 <script src="lib/wow/wow.min.js"></script>
@@ -214,7 +213,6 @@ $icon = htmlspecialchars($row['icon'] ?? '', ENT_QUOTES, 'UTF-8');
 <script src="lib/slick/slick.min.js"></script>
 <script src="lib/slick/slick-init.js"></script>
 <script src="js/main.js"></script>
-<script src="js/activelink.js"></script>
 
 
 </body>

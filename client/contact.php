@@ -56,7 +56,7 @@ include('components/title.php');
       <div class="col-lg-4 col-md-5 mb-4 mb-md-0">
         <div class="contact-info-box">
           <h2 class="ui-title-inner">Nos Coordonnées</h2>
-          <div class="contact-heading-line"></div>
+          <div class="title-line"></div>
 
           <p class="contact-intro">
             Une question ? Un projet d'achat ? N'hésitez pas à nous contacter, notre équipe vous répondra dans les plus brefs délais.
@@ -111,7 +111,7 @@ include('components/title.php');
       <div class="col-lg-8 col-md-7">
         <div class="contact-form-box">
           <h2 class="ui-title-inner">Écrivez-nous</h2>
-          <div class="contact-heading-line"></div>
+          <div class="title-line"></div>
 
           <!-- Error messages -->
           <?php if (!empty($errors)): ?>

@@ -296,6 +296,22 @@ body {
  .title-decor:before,
  .title-decor-2 {
    background-color: var(--primary);
+ }
+
+  .title-line {
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary);
+    margin-bottom: 25px;
+ }
+
+  .ui-title-inner {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.2;
+    margin-bottom: 10px;
 }
 
 /* ===============================
@@ -1502,7 +1518,7 @@ body {
   .services-hero {
     position: relative;
     height: 600px; /* banner height */
-    background-image: url('../../assets/site/services.webp');
+    background-image: url('../../assets/services/bg.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1562,16 +1578,16 @@ body {
   }
 
   /* Icons */
-  .service-icon {
-    font-size: 65px;
+.service-card .service-icon {
+    width: 60px;
+    height: 60px;
     margin-bottom: 20px;
-    transition: 0.3s;
-    color: #555;
-  }
+    filter: brightness(0) saturate(100%); /* Makes it black/text color */
+}
 
-  .service-card:hover .service-icon {
-    color: #fff;
-  }
+.service-card:hover .service-icon {
+    filter: brightness(0) invert(1); /* Makes it white */
+}
 
   /* Titles */
   .service-title {
@@ -2008,13 +2024,6 @@ body {
     letter-spacing: 0.5px;
   }
 
-  .contact-heading-line {
-    width: 50px;
-    height: 3px;
-    background-color: var(--primary);
-    margin-bottom: 25px;
-  }
-
   .contact-intro {
     font-size: 15px;
     color: #666;
@@ -2278,9 +2287,9 @@ body {
 
   .success-box {
     background: #fff;
-    /* border-radius: 12px; */
+    border-radius: 8px;
     padding: 50px 40px;
-    /* box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08); */
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
   }
 
   .success-icon-wrapper {
@@ -2630,5 +2639,295 @@ body {
 }
 
 .car-card-contact-phone:hover {
-    color: #20aac4;               /* your accent color */
+    color: var(--accent);
+}
+
+
+
+
+
+
+
+
+/* ===================================
+           Autixir Reliable Services Section
+           =================================== */
+        .about-services {
+            padding: 80px 0;
+            background: #fff;
+        }
+        
+        .about-services-img-wrap {
+            position: relative;
+        }
+        
+        .ltn__img-shape-left {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .ltn__img-shape-left::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 85%;
+            width: 30px;
+            background-color: var(--accent);
+        }
+        
+        .about-img-left {
+            margin-right: 30px;
+        }
+        
+        .about-img-left img {
+            width: 100%;
+            height: auto;
+        }
+        
+
+        
+        .about-description {
+            font-size: 16px;
+            color: var(--text);
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        .list-item-with-icon {
+            margin-top: 30px;
+        }
+        
+        .list-item-with-icon ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .list-item-with-icon li {
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .list-item-with-icon li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Pro';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+        
+        /* ===================================
+           Revus Services We Offer Section
+           =================================== */
+        .services {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .services__main {
+            margin-left: 10px;
+        }
+        
+        /* Services Navigation Grid */
+        .services-nav {
+            margin-right: 30px;
+            list-style: none;
+            padding: 0;
+            padding-left: 50px;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 270px);
+            gap: 8px;
+        }
+        
+        .services-nav__item {
+            padding: 0;
+            background-color: #fff;
+            box-shadow: 0 0 10px 8px rgba(129, 129, 129, 0.06);
+            transition: all .3s;
+            text-align: right;
+            position: relative;
+        }
+        
+        .services-nav__link {
+            position: relative;
+            display: block;
+            padding: 45px 30px 30px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            text-decoration: none;
+            color: #253241;
+            transition: all .3s;
+            min-height: 200px;
+        }
+        
+        .services-nav__link .ic {
+            font-size: 60px;
+            color: #253241;
+            transition: all .3s;
+        }
+        
+        .services-nav__link::after {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            border-width: 7px;
+            border-style: solid;
+            border-color: transparent;
+            transition: all .3s;
+        }
+        
+        .services-nav__number {
+            position: absolute;
+            top: 15px;
+            left: 25px;
+            font-weight: 700;
+            color: #ccc;
+            font-size: 18px;
+            transition: all .3s;
+        }
+        
+        .services-nav__info {
+            display: block;
+            padding-top: 10px;
+            color: #253241;
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+            transition: all .3s;
+        }
+        
+        /* Active State */
+        .services-nav__link.active {
+            background: linear-gradient(135deg, #18859b 0%, #20aac4 100%);
+        }
+        
+        .services-nav__link.active .ic {
+            color: #fff;
+        }
+        
+        .services-nav__link.active .services-nav__number {
+            font-size: 36px;
+            font-family: 'Montserrat', sans-serif;
+            opacity: .35;
+            color: #fff;
+        }
+        
+        .services-nav__link.active .services-nav__info {
+            font-weight: 700;
+            color: #fff;
+        }
+        
+        .services-nav__link.active::after {
+            border-color: #fff #fff transparent transparent;
+            content: '';
+        }
+        
+        /* Hover State */
+        .services-nav__link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Services Content */
+        .services-content {
+            margin-top: 25px;
+        }
+        
+        .services-content__item {
+            display: none;
+        }
+        
+        .services-content__item.show {
+            display: block;
+        }
+        
+        .services-content__item img {
+            width: 100%;
+            height: auto;
+            /* margin-bottom: 30px; */
+        }
+        
+        .services-content__title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .services-content__item p {
+            font-size: 15px;
+            color: var(--text);
+            line-height: 1.8;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 991px) {
+            .about-img-left {
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+            
+            .ltn__img-shape-left {
+                padding-left: 0;
+            }
+            
+            .ltn__img-shape-left::before {
+                display: none;
+            }
+            
+            .services-nav {
+                margin-bottom: 40px;
+                margin-right: 0;
+            }
+        }
+        
+        @media (max-width: 767px) {      
+            .list-item-with-icon ul {
+                grid-template-columns: 1fr;
+            }
+            
+            .services-nav {
+                grid-template-columns: 1fr;
+            }
+            
+            .ui-title {
+                font-size: 28px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .about-services,
+            .services {
+                padding: 50px 0;
+            }
+            
+            .services-nav__link {
+                padding: 20px;
+            }
+            
+            .services-nav__link .ic {
+                font-size: 45px;
+            }
+        }
+
+/* For SVG/PNG icons as images */
+.services-nav__link .service-icon {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 0 10px auto;  /* NEW - aligns right */
+    filter: brightness(0) saturate(100%);
+    transition: all .3s;
+}
+
+.services-nav__link.active .service-icon {
+    filter: brightness(0) invert(1); /* Makes it white when active */
 }

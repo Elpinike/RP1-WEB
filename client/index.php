@@ -307,7 +307,9 @@ $img = "../assets/cars/{$car['car_id']}/00.webp";
             <?php foreach ($services as $service): ?>
                 <div class="col-md-3 col-sm-6">
                     <div class="service-card h-100">
-                        <i class="service-icon <?= htmlspecialchars($service['icon']) ?>"></i>
+                        <img class="service-icon" 
+                             src="../assets/icons/<?= htmlspecialchars($service['icon']) ?>" 
+                             alt="<?= htmlspecialchars($service['name']) ?>">
 
                         <h3 class="service-title">
                             <?= htmlspecialchars($service['name']) ?>
@@ -327,9 +329,9 @@ $img = "../assets/cars/{$car['car_id']}/00.webp";
 </section>
 
 
-<!-- <section>
-  <div class="pt-5 text-center"><a href="#" class="btn btn-outline-primary">Accéder aux services</a></div>
-</section> -->
+<section>
+  <div class="pt-0 pb-3 text-center"><a href="services.php" class="btn btn-outline-primary">Accéder aux services</a></div>
+</section>
 
 
 
