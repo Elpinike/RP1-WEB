@@ -57,7 +57,7 @@ include('components/title.php');
                     <?php endif; ?>
 
                     <!-- Test Drive Form -->
-                    <form action="controllers/testdrivecontroller.php" method="POST" class="form-sc">
+                    <form action="controllers/testdrivecontroller.php" method="POST" class="form">
 
                         <!-- Condition (Radio buttons) -->
                         <div class="form-group">

@@ -60,7 +60,7 @@ include('components/title.php');
                     <?php endif; ?>
 
                     <!-- Test Drive Form -->
-                    <form action="controllers/testdrivequickcontroller.php" method="POST" class="form-sc">
+                    <form action="controllers/testdrivequickcontroller.php" method="POST" class="form">
                         
                         <!-- Hidden car_id -->
                         <input type="hidden" name="car_id" value="<?= $car['id'] ?>">

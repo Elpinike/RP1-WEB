@@ -124,7 +124,7 @@ include('components/title.php');
             </div>
           <?php endif; ?>
 
-          <form action="controllers/contactcontroller.php" method="POST" class="form-sc">
+          <form action="controllers/contactcontroller.php" method="POST" class="form">
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group mb-3">

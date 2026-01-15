@@ -119,7 +119,7 @@ $icon = htmlspecialchars($row['icon'] ?? '', ENT_QUOTES, 'UTF-8');
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; 2025 <a href="index.php">SuperCar</a>, Tous droits réservés.
+                        &copy; <?php echo date('Y'); ?> <a href="index.php">SuperCar</a>, Tous droits réservés.
                     </div>
                     <!-- <div class="col-md-6 text-center text-md-end">Link Text<a href="https://">Link</a> -->
                 </div>

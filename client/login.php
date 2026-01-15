@@ -49,7 +49,7 @@ include('components/title.php');
           <?php endif; ?>
 
           <!-- Login Form -->
-          <form method="post" action="controllers/logincontroller.php" class="form-sc">
+          <form method="post" action="controllers/logincontroller.php" class="form">
 
             <!-- Email -->
             <div class="form-group">

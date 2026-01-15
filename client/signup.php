@@ -49,7 +49,7 @@ include('components/title.php');
           <?php endif; ?>
 
           <!-- Signup Form -->
-          <form id="signupForm" method="post" action="controllers/signupcontroller.php" class="form-sc">
+          <form id="signupForm" method="post" action="controllers/signupcontroller.php" class="form">
 
             <!-- Name row -->
             <div class="row">

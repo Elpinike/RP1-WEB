@@ -22,7 +22,7 @@ include('components/title.php');
 // Fetch active services from database
 try {
     $stmt = $pdo->prepare("
-        SELECT id, service_id, name, description, description_full, icon, image 
+        SELECT id, service_id, name, description, icon, image 
         FROM services 
         WHERE is_active = 1 
         ORDER BY id ASC
@@ -51,7 +51,8 @@ try {
                 <div class="col-lg-7 align-self-center">
                     <div class="about-services-info-wrap">
                         <div class="section-title-area">
-                            <h2 class="ui-title-inner">17 ans d'expertise Automobile</h2>
+                            <?php $years = date('Y') - 2009; ?>
+                            <h2><?php echo $years; ?> ans d'expertise automobile</h2>
                             <div class="title-line"></div>
                             <p class="about-description">Depuis 2009, SuperCar assure bien plus que la vente de voitures neuves importées de partout dans le monde. Notre atelier automobile propose entretien et réparation pour tous types de véhicules.</p>
                         </div>
@@ -133,7 +134,7 @@ try {
                                      src="../assets/services/<?php echo $service['image']; ?>" 
                                      alt="<?php echo $service['name']; ?>" />
                                 <h3 class="services-content__title"><?php echo $service['name']; ?></h3>
-                                <p><?php echo $service['description_full']; ?></p>
+                                <p><?php echo $service['description']; ?></p>
                             </div>
                             <?php 
                                 $counter++;
